@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navigation bar */
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+}
+#logo img {
+    height: 100px;
+    margin: -6px 41px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    padding: 0 24px;
+    margin: 0 13px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Baloo 2', cursive;
+    border-radius: 44px;
+}
+ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* home section */
+#home::before{
+    content: "";
+    background: url('../bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height:642px;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:550px;
+    padding: 3px 200px;
+    align-items: center;
+    
+}
+#home h1{
+    text-align: center;
+    color: black;
+    font-size: 3.4rem;
+    margin: 38px auto;
+}
+#home p{
+    text-align: center;
+    font-size: 1.5rem;
+    width: 60%;
+    font-family: 'Readex Pro', sans-serif;
+}
+.btn{
+    text-align: center;
+    font-size: 1.5rem;
+    padding:  6px 24px;
+    margin: 14px;
+    background: brown;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+/* services sction */
+#services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#services img{
+    height:175px;
+    display: block;
+    margin: auto;
+}
+.box{
+    background: cornsilk;
+    border: 2px solid grey;
+    border-radius: 14px;
+    width: 398px;
+    margin: 23px 10px;
+}
+
+#services p{
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 23px;
+} 
+/* #clients::before{
+    content: "";
+    background-color: red;
+    background: url('../bg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height:642px;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.5;
+} */
+#clients::before{
+    content: "";
+    background: url('../bg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height:240px;
+    z-index: -1;
+    opacity: 0.6;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url('../bg2.jpg') no-repeat center center/cover;
+    opacity: 0.5; */
+}
+
+#clients img{
+    height: 20vh;
+    margin: 27px;
+}
+/* utliliite classes */
+.h-primary{
+    font-size: 2.3rem;
+    font-family: 'Readex Pro', sans-serif;
+}
+.h-secondary{
+    font-size: 1.7rem;
+    font-family: 'Readex Pro', sans-serif;
+
+}
+.center{
+    text-align: center;
+    margin: 20px 0; 
+    font-size: 2.3rem;
+    font-family: 'Readex Pro', sans-serif;
+}
+/* contact-us section */
+.contact::before{
+    content: "";
+    background: url('../bg3.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height:660px;
+    z-index: -1;
+    opacity: 0.8;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact input{
+    display: block;
+    margin: 11px auto;
+    width: 50vw;
+    text-align: center;
+    height: 34px;
+    background-color: #333333eb;
+    font-size: 26px;
+    border: 4px solid black;
+    border-radius: 15px;
+    font-family: 'Readex Pro', sans-serif;
+}
+.contact textarea{
+    display: block;
+    margin: auto;
+    width: 50vw;
+    text-align: center;
+    background-color: #333333eb;
+    font-size: 26px;
+    border: 4px solid black;
+    border-radius: 15px;
+    font-family: 'Readex Pro', sans-serif;
+
+}
+/* footer section */
+footer{
+    background: #c0ac22;
+    color: white;
+    padding: 1px 20px;
+}
+
